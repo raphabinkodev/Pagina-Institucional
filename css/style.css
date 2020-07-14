@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html,body{
+    height: 100%;
+}
+.clear{
+    clear: both;
+}
+.container{
+    max-width: 1560px;
+    margin: 0 auto;
+}
+header{
+    width: 100%;
+    height: 90vh;
+    max-height: 700px;
+    background-image: url(../imagens/capa.png);
+    background-size: cover;
+    background-position: center;
+    padding: 12px 2%;
+}
+header .logo{
+    float: left;
+    width: 160px;
+    height: 60px;
+    background-color: rgba(41, 23, 56, 0.8);
+}
+header nav{
+    float: right;
+}
+header nav.mobile-menu{
+    cursor: pointer;
+    display: none;
+    width: 48px;
+    height: 48px;
+    background-image: url(../imagens/computer.png);
+    background-size: 100% 100%;
+    margin-top: 20px;
+}
+header nav.mobile-menu ul{
+    width: 100%;
+    display: none;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 75px;
+    text-align: center;
+}
+header nav.mobile-menu li{
+    color: white;
+    border-bottom: 1px solid white;
+    padding: 4px 0;
+}
+header nav.mobile-menu:hover ul{
+    display: block;
+}
+header nav.desktop-menu li{
+    float: left;
+}
+header nav.desktop-menu ul{
+    list-style: none;
+}
+header nav.desktop-menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 0 20px;
+}
+header nav.desktop-menu li:hover{
+    background-color: rgba(41, 23, 56, 0.4);
+    border: 1px solid rgba(41, 23, 56, 0.4);
+    border-radius: 10px;
+}
+.chamada1{
+    float: right;
+    margin: 210px 210px;
+    max-width: 560px;
+    padding: 0 2%;
+    background-color: rgba(41, 23, 56, 0.4);
+    border: 1px solid rgba(41, 23, 56, 0.4);
+    border-radius: 10px;
+}
+.chamada1 h2{
+    font-size: 40px;
+    color: white;
+    font-weight: lighter;
+}
+.chamada1 p{
+    color: white;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+.submenu{
+    background-color: #472663;
+    width: 100%;
+    height: 335px;
+    padding: 0px 2%;
+}
+.chamada2{
+    width: 50%;
+    float: left;
+    font-weight: lighter;
+    color: white;
+    margin: 60px;
+}
+.chamada2 h2{
+    font-size: 32px;
+    font-weight: lighter;
+}
+.chamada2 p{
+    margin-top: 20px;
+}
+.chamada2 ul{
+    list-style-position: inside;
+}
+.button{
+    width: 165px;
+    height: 44px;
+    margin-top: 20px;
+    background-color: #ff703e;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 42px;
+}
+.button a{
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1000px){
+    .chamada1{
+        float: none;
+        width: 100%;
+        margin: 210px auto;
+    }
+    .chamada1 h2{
+        font-size: 34px;
+        color: white;
+        font-weight: lighter;
+    }
+    .submenu{
+        height: auto;
+        padding: 0 2%;
+    }
+    .chamada2{
+        width: 100%;
+        float: none;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        width: 100%;
+        height: auto;
+        min-height: 90vh;
+        max-height: 700px;
+        background-image: url(../imagens/capa.png);
+        background-size: cover;
+        background-position: center;
+        padding: 12px 2%;
+    }
+    header nav.desktop-menu{
+        display: none;
+    }
+    header nav.mobile-menu{
+        display:block;
+    }
+    header nav.mobile-menu ul{
+        list-style: none;
+    }
+    header nav.mobile-menu a{
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        margin: 0 20px;
+    }
+}
