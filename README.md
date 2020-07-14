@@ -1,7 +1,7 @@
 <h1 align="center"> LANDING PAGE <h1>
 
 <h1>
-    <img src = "https://ik.imagekit.io/imagesbinko/Readme_Dav6BH19h.jpg">
+    <img src = "https://imgur.com/a/k47BysB">
 </h1>
 
 ## 🐱‍👓 INDICE
